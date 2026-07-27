@@ -60,7 +60,7 @@ Google Sheets Output
 
 The automation was developed using Google Apps Script to analyse websites in bulk and classify their underlying eCommerce platform.
 
-![Apps Script](../assets/website-detector/apps-script-editor.png)
+![Apps Script](../assets/images/Platform%20detector.png)
 
 ---
 
@@ -76,7 +76,7 @@ Example outputs include:
 - Custom Cart / Other Setup
 - Check Manually (403 / Network Error)
 
-![Detection Output](../assets/website-detector/platform-detection-output.png)
+![Detection Output](../assets/images/Test%20Sheet.png)
 
 # 📊 Supported Platforms
 
