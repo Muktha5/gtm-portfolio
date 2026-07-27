@@ -1,103 +1,100 @@
-# 🌐 Website Technology Detector
+# 🚀 Bulk eCommerce Platform Detection Engine
 
-> Detecting eCommerce technologies to support GTM research and platform-specific prospecting.
+## 📌 Business Problem
 
----
+During GTM research, identifying the eCommerce platform used by hundreds of companies manually is time-consuming and inconsistent.
 
-# 📌 Project Overview
+Sales and GTM teams require technology-specific prospect lists to support platform migration campaigns, implementation services, and outbound prospecting.
 
-During GTM research, identifying the technology stack of a company's website is essential for platform-specific outreach.
-
-This project automated the process of detecting technologies such as Shopify, Magento, WooCommerce, Adobe Commerce, and analytics tools using Google Apps Script.
-
-The objective was to reduce manual research time and improve the accuracy of technology qualification.
-
----
-
-# 🎯 Business Problem
-
-Manually checking hundreds of websites to identify their technology stack is slow and repetitive.
-
-This automation provides a faster way to classify companies based on the technologies they use.
+This project automated the entire technology detection process using Google Apps Script.
 
 ---
 
 # 🎯 Objectives
 
-- Detect website technologies
-- Classify eCommerce platforms
-- Support ICP qualification
-- Improve research efficiency
+- Detect eCommerce platforms automatically
+- Process hundreds of websites in batches
+- Reduce manual research effort
+- Support GTM prospect qualification
+- Generate technology-specific lead lists
 
 ---
 
 # 🛠 Tech Stack
 
 - Google Apps Script
-- Google Sheets
-- BuiltWith
-- Wappalyzer
 - JavaScript
+- Google Sheets
+- HTTP Requests
+- HTML Parsing
 
 ---
 
 # 🔄 Workflow
 
-```text
-Website URL
-      │
-      ▼
-Apps Script
-      │
-      ▼
+Website URLs
+
+↓
+
+Google Apps Script
+
+↓
+
+Website Analysis
+
+↓
+
 Technology Detection
-      │
-      ▼
-Google Sheet
-      │
-      ▼
-Qualified Company
-```
+
+↓
+
+Platform Classification
+
+↓
+
+Google Sheets Output
 
 ---
 
-# 📊 Output
+# 📸 Script
 
-The workflow detects technologies such as:
+![Apps Script](../assets/images/apps-script-editor.png)
+
+---
+
+# 📸 Output
+
+![Output](../assets/images/platform-output.png)
+
+---
+
+# 📊 Supported Platforms
 
 - Shopify
-- Shopify Plus
+- WooCommerce
 - Magento
 - Adobe Commerce
-- WooCommerce
 - BigCommerce
-- Google Analytics
-- Cloudflare
+- Custom Cart
+- Unknown Platforms
+
+---
+
+# 📈 Results
+
+- Batch processed 600+ websites
+- Automated platform detection
+- Reduced manual research
+- Improved GTM qualification
+- Created technology-ready prospect lists
 
 ---
 
 # 💡 Skills Demonstrated
 
-- Workflow Automation
 - Google Apps Script
-- Technology Research
-- GTM Automation
+- JavaScript
+- Automation
 - Data Processing
-
----
-
-# 📈 Business Impact
-
-- Reduced manual technology research.
-- Improved platform-specific prospecting.
-- Supported faster ICP qualification.
-- Created reusable automation for GTM teams.
-
----
-
-# 🚀 Future Improvements
-
-- API integration
-- Bulk website analysis
-- CRM integration
-- AI-based technology classification
+- GTM Automation
+- Technology Research
