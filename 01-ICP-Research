@@ -1,83 +1,120 @@
-# ICP Research Framework
+# 🎯 ICP Research Framework
 
-## Business Problem
-
-Many B2B companies waste time prospecting businesses that are not ideal customers.
-
-The objective was to build a structured ICP framework that identifies high-quality accounts based on business attributes, technology stack, company size, and market fit.
+> Building a repeatable Ideal Customer Profile (ICP) framework for B2B GTM teams.
 
 ---
 
-# Goal
+# 📌 Project Overview
 
-Build a repeatable ICP research process that can generate qualified prospect lists for GTM teams.
+Finding the right customers is one of the biggest challenges in B2B sales.
 
----
+This project focused on creating a structured process to identify companies that closely match the Ideal Customer Profile (ICP) based on business characteristics, technology stack, geography, company size, and decision-maker roles.
 
-# Research Process
-
-1. Define target industries
-2. Define target regions
-3. Identify ecommerce technologies
-4. Filter by company size
-5. Validate business model
-6. Identify decision makers
-7. Export qualified companies
+The objective was to improve lead quality and reduce time spent on researching unsuitable prospects.
 
 ---
 
-# Tech Stack
+# 🎯 Objectives
+
+- Define the Ideal Customer Profile (ICP)
+- Research target accounts
+- Filter companies using predefined criteria
+- Identify decision makers
+- Create a qualified prospect list
+
+---
+
+# 🌍 Target Market
+
+- North America
+- Canada
+- Southeast Asia
+- GCC
+
+---
+
+# 🏢 Target Industries
+
+- Retail
+- Ecommerce
+- Fashion
+- Beauty
+- Electronics
+- B2B Manufacturing
+
+---
+
+# 🛠 Technology Stack
 
 - Apollo.io
 - BuiltWith
 - Wappalyzer
-- Google Sheets
 - Google Search
 - LinkedIn
+- Google Sheets
 
 ---
 
-# Workflow
+# 🔍 Research Workflow
 
-Market Research
-
-↓
-
-Technology Detection
-
-↓
-
-ICP Qualification
-
-↓
-
+```text
+Industry Research
+        │
+        ▼
+Technology Identification
+        │
+        ▼
+Company Qualification
+        │
+        ▼
 Decision Maker Research
-
-↓
-
-Lead Export
-
----
-
-# Output
-
-- Qualified Accounts
-- Decision Makers
-- Verified Company Information
-- GTM Ready Prospect List
+        │
+        ▼
+Lead Validation
+        │
+        ▼
+Qualified Prospect List
+```
 
 ---
 
-# Skills Demonstrated
+# ✅ ICP Qualification Criteria
 
-- Market Research
+| Criteria | Example |
+|-----------|---------|
+| Industry | Retail / Ecommerce |
+| Employees | 10+ |
+| Revenue | Mid-Market & Enterprise |
+| Technology | Shopify, Magento, Adobe Commerce |
+| Geography | Canada, SEA, GCC |
+| Business Model | B2B / D2C |
+
+---
+
+# 📦 Deliverables
+
+- Qualified account list
+- Company research
+- Decision-maker list
+- Technology stack information
+- GTM-ready lead database
+
+---
+
+# 💡 Key Skills
+
 - ICP Development
-- GTM Strategy
+- Market Research
 - Lead Qualification
+- Account Research
 - Data Validation
+- GTM Strategy
 
 ---
 
-# Status
+# 🚀 Future Improvements
 
-✅ Completed
+- AI-assisted ICP scoring
+- CRM integration
+- Automated enrichment
+- Intent data integration
