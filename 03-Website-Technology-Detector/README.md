@@ -56,17 +56,27 @@ Google Sheets Output
 
 ---
 
-# 📸 Script
+# 📸 Google Apps Script Implementation
 
-![Apps Script](../assets/images/apps-script-editor.png)
+The automation was developed using Google Apps Script to analyse websites in bulk and classify their underlying eCommerce platform.
 
----
-
-# 📸 Output
-
-![Output](../assets/images/platform-output.png)
+![Apps Script](../assets/website-detector/apps-script-editor.png)
 
 ---
+
+# 📊 Detection Results
+
+The script processes website URLs and automatically classifies each website into its corresponding eCommerce platform.
+
+Example outputs include:
+
+- Shopify
+- WooCommerce
+- Magento
+- Custom Cart / Other Setup
+- Check Manually (403 / Network Error)
+
+![Detection Output](../assets/website-detector/platform-detection-output.png)
 
 # 📊 Supported Platforms
 
