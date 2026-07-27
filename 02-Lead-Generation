@@ -146,3 +146,33 @@ This workflow helped improve lead quality by focusing research on companies that
 - CRM integration
 - Intent-data based prospecting
 - Automated workflow using n8n
+
+---
+
+# 📸 GTM Prospecting Workflow (Apollo.io)
+
+The following screenshots demonstrate the structured process used to identify and qualify target accounts.
+
+## Step 1 – Company Qualification
+
+Companies were filtered based on employee count and industry to align with the Ideal Customer Profile (ICP).
+
+![Employee Count Filter](../assets/images/01-employee-count-filter.png)
+
+---
+
+## Step 2 – Decision Maker Identification
+
+Decision-makers such as CEOs, Owners, and Managers were identified to support targeted outreach.
+
+![Job Title Filter](../assets/images/02-job-title-filter.png)
+
+---
+
+## Step 3 – Technology Stack Qualification
+
+Technology filters were applied to identify businesses using WooCommerce and other relevant eCommerce platforms.
+
+![Technology Filter](../assets/images/03-technology-filter.png)
+
+---
