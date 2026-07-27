@@ -1,0 +1,83 @@
+# ICP Research Framework
+
+## Business Problem
+
+Many B2B companies waste time prospecting businesses that are not ideal customers.
+
+The objective was to build a structured ICP framework that identifies high-quality accounts based on business attributes, technology stack, company size, and market fit.
+
+---
+
+# Goal
+
+Build a repeatable ICP research process that can generate qualified prospect lists for GTM teams.
+
+---
+
+# Research Process
+
+1. Define target industries
+2. Define target regions
+3. Identify ecommerce technologies
+4. Filter by company size
+5. Validate business model
+6. Identify decision makers
+7. Export qualified companies
+
+---
+
+# Tech Stack
+
+- Apollo.io
+- BuiltWith
+- Wappalyzer
+- Google Sheets
+- Google Search
+- LinkedIn
+
+---
+
+# Workflow
+
+Market Research
+
+↓
+
+Technology Detection
+
+↓
+
+ICP Qualification
+
+↓
+
+Decision Maker Research
+
+↓
+
+Lead Export
+
+---
+
+# Output
+
+- Qualified Accounts
+- Decision Makers
+- Verified Company Information
+- GTM Ready Prospect List
+
+---
+
+# Skills Demonstrated
+
+- Market Research
+- ICP Development
+- GTM Strategy
+- Lead Qualification
+- Data Validation
+
+---
+
+# Status
+
+✅ Completed
