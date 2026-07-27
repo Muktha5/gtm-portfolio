@@ -56,31 +56,28 @@ The project combined market research, technology stack identification, account q
 
 ---
 
-# 🔄 Lead Generation Workflow
+# 🔄 GTM Prospecting Workflow
 
 ```text
-Define ICP
-      │
-      ▼
-Research Target Companies
-      │
-      ▼
-Identify Technology Stack
-      │
-      ▼
-Qualify Company
-      │
-      ▼
-Find Decision Makers
-      │
-      ▼
-Validate Data
-      │
-      ▼
-Export Lead List
-```
+                     GTM Prospecting Workflow
 
----
+          🎯 Define ICP
+                 │
+                 ▼
+      🏢 Company Qualification
+                 │
+                 ▼
+      👥 Decision Maker Research
+                 │
+                 ▼
+      💻 Technology Qualification
+                 │
+                 ▼
+        ✅ Lead Validation
+                 │
+                 ▼
+       📋 Qualified Prospect List
+```
 
 # 📋 Qualification Criteria
 
