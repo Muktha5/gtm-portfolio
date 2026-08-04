@@ -1,16 +1,16 @@
 # 🤖 GTM Email Discovery & Validation Automation using n8n
 
-> An automated workflow built with **n8n** to generate business email patterns, validate them using an email verification API, and update Google Sheets with verified contact information.
+> Built an automated workflow using **n8n**, **HTTP APIs**, and **Google Sheets** to generate business email patterns, validate email addresses, and create outreach-ready contact lists.
 
 ---
 
 # 📌 Business Problem
 
-Outbound sales teams often know a prospect's name and company website but do not have a verified business email address.
+Sales teams often know a prospect's **first name**, **last name**, and **company domain**, but do not have a verified business email.
 
-Manually generating multiple email combinations and checking every email through verification tools is repetitive, slow, and difficult to scale.
+Manually generating multiple email combinations and validating each email through verification tools is repetitive, time-consuming, and difficult to scale.
 
-This workflow automates the entire process from email generation to verification, enabling faster GTM execution.
+This workflow automates the entire process—from generating email patterns to validating them—helping GTM teams prepare accurate contact data for outbound campaigns.
 
 ---
 
@@ -29,79 +29,82 @@ This workflow automates the entire process from email generation to verification
 - n8n
 - Google Sheets
 - HTTP Request Node
-- JSON
 - Email Verification API
-- Conditional Logic
+- JSON
+- Workflow Automation
 
 ---
 
 # 🔄 Workflow
 
 ```text
-Google Sheet
+Google Sheets
 (First Name + Last Name + Domain)
                 │
                 ▼
 Generate Email Patterns
                 │
                 ▼
-HTTP Request
+HTTP Request Node
                 │
                 ▼
 Email Verification API
                 │
                 ▼
-Process API Response
+Process JSON Response
                 │
                 ▼
 Select Valid Email
                 │
                 ▼
-Update Google Sheet
+Update Google Sheets
 ```
 
 ---
 
-# 📸 Step 1 – n8n Workflow
+# 📸 Step 1 – Complete n8n Workflow
 
-The workflow orchestrates the complete automation process by reading prospect information, generating multiple email patterns, validating each address through an HTTP API, and returning the verified result.
+The workflow automates the entire email verification process by connecting Google Sheets, generating multiple email combinations, validating each email through an API, and updating the final verified email automatically.
 
-> Upload your **actual workflow canvas** as:
-
-```
-assets/images/n8n-workflow.png
-```
-
-```markdown
 ![n8n Workflow](../assets/images/n8n-workflow.png)
-```
 
 ---
 
-# 📸 Step 2 – Email Pattern Generation
+# 📸 Step 2 – HTTP Request Configuration
 
-The workflow generates multiple business email combinations using the prospect's first name, last name, and company domain.
+The HTTP Request node sends generated email addresses to an email verification API and receives a JSON response containing the validation status for each email.
+
+The workflow analyses this response to identify the first valid business email.
+
+![HTTP Request](../assets/images/01-n8n-http-validation-workflow.png)
+
+---
+
+# 📸 Step 3 – Email Pattern Generation
+
+Multiple business email formats are automatically created using the prospect's first name, last name, and company domain.
 
 Examples include:
 
 - firstname@company.com
 - firstname.lastname@company.com
-- flastname@company.com
+- lastname@company.com
 - firstinitiallastname@company.com
 
-![Email Pattern Generation](../assets/images/02-email-pattern-generation-sheet.png)
+These generated patterns are stored in Google Sheets before validation.
 
+![Email Pattern Generation](../assets/images/02-email-pattern-generation-sheet.png)
 ---
 
-# 📸 Step 3 – Final Validation Results
+# 📸 Step 4 – Final Validation Results
 
-After validating all generated email combinations, the workflow automatically selects the first valid business email and updates Google Sheets.
+After validating every generated email, the workflow automatically updates Google Sheets with:
 
-Information updated includes:
+- Final Verified Email
+- Email Validation Status
+- Completion Status
 
-- Final Email
-- Email Status
-- Validation Result
+This creates an outreach-ready contact database without manual intervention.
 
 ![Final Validation Results](../assets/images/03-final-email-validation-results.png)
 
@@ -109,26 +112,28 @@ Information updated includes:
 
 # 📊 Business Impact
 
-This automation helps GTM teams by:
+This automation:
 
-- Eliminating repetitive manual email verification
-- Improving lead data accuracy
-- Increasing outbound readiness
-- Standardising contact enrichment
-- Saving research time
+- Reduced manual email verification effort
+- Improved lead data accuracy
+- Accelerated outbound prospecting
+- Standardised email validation
+- Built GTM-ready contact lists
+- Reduced repetitive research tasks
 
 ---
 
 # 💡 Skills Demonstrated
 
-- GTM Automation
 - n8n Workflow Development
+- GTM Automation
 - HTTP API Integration
 - Email Verification
 - Google Sheets Automation
 - JSON Processing
 - Lead Enrichment
-- Workflow Automation
+- Sales Operations
+- Workflow Design
 
 ---
 
@@ -138,7 +143,7 @@ This automation helps GTM teams by:
 - CRM Synchronisation
 - Bulk Lead Enrichment
 - AI-Based Lead Scoring
-- Automated Email Outreach
+- Automated Outreach Sequences
 
 ---
 
