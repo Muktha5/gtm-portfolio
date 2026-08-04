@@ -1,44 +1,44 @@
-# 🤖 GTM Email Discovery & Validation Automation
+# 🤖 GTM Email Discovery & Validation Automation using n8n
 
-> Automating business email generation and validation using n8n, HTTP APIs, and Google Sheets to accelerate GTM prospecting.
+> An automated workflow built with **n8n** to generate business email patterns, validate them using an email verification API, and update Google Sheets with verified contact information.
 
 ---
 
 # 📌 Business Problem
 
-Sales and GTM teams often know a prospect's name and company website but do not have a verified business email address.
+Outbound sales teams often know a prospect's name and company website but do not have a verified business email address.
 
-Manually generating multiple email combinations and validating each one is time-consuming and inefficient.
+Manually generating multiple email combinations and checking every email through verification tools is repetitive, slow, and difficult to scale.
 
-This workflow automates email pattern generation, validates every possible email using an email verification API, and automatically identifies the first valid business email.
+This workflow automates the entire process from email generation to verification, enabling faster GTM execution.
 
 ---
 
 # 🎯 Objectives
 
-- Automate email pattern generation
-- Validate business email addresses
+- Automate business email generation
+- Validate email addresses using an API
 - Reduce manual prospect research
-- Improve outbound data quality
-- Build GTM-ready contact lists
+- Improve lead quality
+- Build outreach-ready contact lists
 
 ---
 
 # 🛠 Technologies Used
 
 - n8n
-- HTTP Request
 - Google Sheets
+- HTTP Request Node
 - JSON
 - Email Verification API
-- JavaScript Expressions
+- Conditional Logic
 
 ---
 
 # 🔄 Workflow
 
 ```text
-Prospect Data
+Google Sheet
 (First Name + Last Name + Domain)
                 │
                 ▼
@@ -46,13 +46,15 @@ Generate Email Patterns
                 │
                 ▼
 HTTP Request
-(Email Verification API)
                 │
                 ▼
-Validate All Email Patterns
+Email Verification API
                 │
                 ▼
-Select First Valid Email
+Process API Response
+                │
+                ▼
+Select Valid Email
                 │
                 ▼
 Update Google Sheet
@@ -62,24 +64,30 @@ Update Google Sheet
 
 # 📸 Step 1 – n8n Workflow
 
-The workflow receives prospect information from Google Sheets, sends multiple email combinations to an email verification API, and processes the response automatically.
+The workflow orchestrates the complete automation process by reading prospect information, generating multiple email patterns, validating each address through an HTTP API, and returning the verified result.
 
-![n8n Workflow](../assets/images/01-n8n-http-validation-workflow.png)
+> Upload your **actual workflow canvas** as:
+
+```
+assets/images/n8n-workflow.png
+```
+
+```markdown
+![n8n Workflow](../assets/images/n8n-workflow.png)
+```
 
 ---
 
 # 📸 Step 2 – Email Pattern Generation
 
-Possible business email formats are generated using the prospect's first name, last name, and company domain.
+The workflow generates multiple business email combinations using the prospect's first name, last name, and company domain.
 
 Examples include:
 
 - firstname@company.com
-- lastname@company.com
 - firstname.lastname@company.com
+- flastname@company.com
 - firstinitiallastname@company.com
-
-The generated patterns are stored in Google Sheets for automated validation.
 
 ![Email Pattern Generation](../assets/images/02-email-pattern-generation-sheet.png)
 
@@ -87,11 +95,13 @@ The generated patterns are stored in Google Sheets for automated validation.
 
 # 📸 Step 3 – Final Validation Results
 
-After validating every email pattern, the workflow automatically selects the first valid email address and updates the spreadsheet with:
+After validating all generated email combinations, the workflow automatically selects the first valid business email and updates Google Sheets.
+
+Information updated includes:
 
 - Final Email
-- Validation Status
-- Completion Status
+- Email Status
+- Validation Result
 
 ![Final Validation Results](../assets/images/03-final-email-validation-results.png)
 
@@ -99,13 +109,13 @@ After validating every email pattern, the workflow automatically selects the fir
 
 # 📊 Business Impact
 
-This workflow helped:
+This automation helps GTM teams by:
 
-- Reduce manual email research
-- Improve lead data quality
-- Increase outbound readiness
-- Standardize email verification
-- Automate repetitive GTM tasks
+- Eliminating repetitive manual email verification
+- Improving lead data accuracy
+- Increasing outbound readiness
+- Standardising contact enrichment
+- Saving research time
 
 ---
 
@@ -118,14 +128,24 @@ This workflow helped:
 - Google Sheets Automation
 - JSON Processing
 - Lead Enrichment
-- Sales Operations
+- Workflow Automation
 
 ---
 
 # 🚀 Future Improvements
 
-- CRM Integration
 - Apollo API Integration
+- CRM Synchronisation
 - Bulk Lead Enrichment
-- Automated Outreach Trigger
-- AI-Based Lead Qualification
+- AI-Based Lead Scoring
+- Automated Email Outreach
+
+---
+
+## 🔗 Related Projects
+
+- 🎯 [ICP Research](../01-ICP-Research)
+- 🚀 [Lead Generation](../02-Lead-Generation)
+- 🌐 [Website Technology Detector](../03-Website-Technology-Detector)
+
+🏠 [Back to Portfolio Home](../)
